@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Baner.css';
 class Bener extends Component {
+    constructor(props){
+        super(props)
+        this.state={name:"mcart"}
+        
+    }
     render() {
         return (
             <div class="mybaner">
-                <Carousel>
+                <h1>{this.props.name}</h1>
+                {/* <Carousel>
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
@@ -13,7 +19,7 @@ class Bener extends Component {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h3>{this.props.name}</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -41,7 +47,7 @@ class Bener extends Component {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-    </Carousel>
+    </Carousel> */}
             </div>
         );
     }
